@@ -79,17 +79,22 @@ def pix_confirmation():
 def payment_pix_page(payment_id):
     payment = Payment.query.get(payment_id)
 
-    template_data = {
-        "payment_id": payment.id,
-        "value": payment.value,
-        "host": HOST,
-        "qr_code": payment.qr_code,
-        "expiration_date": payment.expiration_date,
-    }
-
     if payment.paid:
-        return render_template("confirmed_payment.html", **template_data)
-    return render_template("payment.html", **template_data)
+        return render_template(
+            "confirmed_payment.html",
+            payment_id=payment.id,
+            value=payment.value,
+            qr_code=payment.qr_code,
+        )
+
+    return render_template(
+        "payment.html",
+        payment_id=payment.id,
+        value=payment.value,
+        host=HOST,
+        qr_code=payment.qr_code,
+        expiration_date=payment.expiration_date,
+    )
 
 
 # websockets

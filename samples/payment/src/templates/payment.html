@@ -65,8 +65,8 @@
       });
 
       socket.on('payment-confirmed-{{payment_id}}', function() {
-        
         console.log("Payment confirmed.")
+        location.reload();
       })
 
       function updateCountdown() {
