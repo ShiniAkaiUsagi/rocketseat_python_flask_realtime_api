@@ -52,3 +52,9 @@ PYTHONPATH=. poetry run python sample/payment/src/app.py
 PYTHONPATH=. FLASK_APP=sample.payment.src.app poetry run flask shell
 db.create_all()
 
+
+## Executando desafio3 - Chat
+PYTHONPATH=. poetry run python src/app.py
+
+PYTHONPATH=. FLASK_APP=src.app poetry run flask shell
+db.create_all()

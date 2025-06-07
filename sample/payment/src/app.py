@@ -102,7 +102,6 @@ def create_app(config=None):
             expiration_date=payment.expiration_date,
         )
 
-    # WebSockets
     @socketio.on("connect")
     def handle_connect():
         print("Client connected to the server.")

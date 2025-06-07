@@ -16,7 +16,7 @@ QR_CODE_IMG_DIR = Path.cwd() / "sample" / "payment" / "src" / "static" / "img"
 def test_app():
     """Cria uma instância de aplicação Flask para testes."""
     config = {"TESTING": True, "SQLALCHEMY_DATABASE_URI": "sqlite:///:memory:"}
-    app = create_app(config)  # 🔹 Criamos a aplicação sem iniciar o servidor
+    app = create_app(config)
     return app
 
 

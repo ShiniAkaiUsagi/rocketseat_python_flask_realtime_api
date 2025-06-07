@@ -11,9 +11,6 @@ class Pix:
         pass
 
     def create_payment(self):
-        # Cria o pagamento na 'instituição financeira'.
-        # Exemplo criando infos localmente, apenas para prática em aula
-
         bank_payment_id = uuid.uuid4()
         hash_payment = f"hash_payment_{bank_payment_id}"
         img = qrcode.make(hash_payment)
