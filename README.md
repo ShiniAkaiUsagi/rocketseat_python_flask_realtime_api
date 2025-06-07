@@ -7,6 +7,7 @@ O [Desafio proposto](Desafio03.txt).
 
 Sample: Projeto de teste criado em aula simulando pagament com pix via api.
 
+Desafio: Projeto simples de chat por um servidor local com atualização em tempo real.
 
 ## Requisitos
 
