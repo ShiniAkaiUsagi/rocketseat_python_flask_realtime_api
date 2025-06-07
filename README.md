@@ -1,11 +1,12 @@
 # RocketSeat - Desafio 01 - Agenda
 
 Projeto criado como forma de fixar e avaliar os conhecimentos obtidos no módulo 3: "Comunicação em Tempo Real com Flask".
-O [Desafio proposto](Desafio03.txt)
+O [Desafio proposto](Desafio03.txt).
 
 ### Funcionalidades
 
-xxxxx
+Sample: Projeto de teste criado em aula simulando pagament com pix via api.
+
 
 ## Requisitos
 
@@ -46,8 +47,8 @@ Observação: Os testes unitários dos projetos sql_alchemy_api e do desafio02
     estão utilizando um banco de dados na memória, não impactando a aplicação.
 
 ## Executando sample - Payments
-PYTHONPATH=. poetry run python samples/payment/src/app.py
+PYTHONPATH=. poetry run python sample/payment/src/app.py
 
-PYTHONPATH=. FLASK_APP=samples.payment.src.app poetry run flask shell
+PYTHONPATH=. FLASK_APP=sample.payment.src.app poetry run flask shell
 db.create_all()
 

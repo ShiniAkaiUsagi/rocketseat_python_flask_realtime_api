@@ -1,4 +1,4 @@
-from samples.payment.src.repository.database import db
+from sample.payment.src.repository.database import db
 
 
 class Payment(db.Model):

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import qrcode
 
-BASE_DIR = Path.cwd() / "samples" / "payment" / "src"
+BASE_DIR = Path.cwd() / "sample" / "payment" / "src"
 
 
 class Pix:

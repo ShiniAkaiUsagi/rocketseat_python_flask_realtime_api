@@ -98,13 +98,13 @@ minversion = "8.0"
 addopts = """
     -ra
     -q 
+    --dist=loadfile
     -n 4
     --html=report.html
     --self-contained-html
     --junitxml=report.xml
     --cov=src
-    --cov=sample/crud_tarefas/src
-    --cov=sample/sql_alchemy/src
+    --cov=sample/payment/src
     --cov-report=html 
     --cov-report=xml 
     --disable-warnings
@@ -119,8 +119,7 @@ addopts = """
 
 testpaths = [
     "tests",
-    "sample/crud_tarefas/tests",
-    "sample/sql_alchemy/tests",
+    "sample/payment/tests",
     ]
 python_files = "test_*.py"
 python_classes = "Test*"
@@ -131,8 +130,7 @@ python_functions = "test_*"
 branch = true
 source = [
     "src",
-    "sample/crud_tarefas/src",
-    "sample/sql_alchemy/src",
+    "sample/payment/src",
     ]
 
 
