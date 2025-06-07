@@ -7,3 +7,6 @@ report.html
 report.xml
 .coverage
 .poetry
+sample/payment/database/database.db
+sample/payment/src/static/img/*.png
+database.db

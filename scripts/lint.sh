@@ -10,8 +10,9 @@ find . -type d \( \
 
 find . -type f \( \
     -name "*.pyc" -o \
-    -name "*.xml" -o \
-    -name "*.html" -o \
+    -name "coverage.xml" -o \
+    -name "report.xml" -o \
+    -name "report.html" -o \
     -name ".coverage" \
 \) -delete
 

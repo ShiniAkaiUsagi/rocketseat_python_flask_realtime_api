@@ -1,9 +1,11 @@
 # RocketSeat - Desafio 01 - Agenda
 
-Projeto criado como forma de fixar e avaliar os conhecimentos obtidos no módulo 2: "Desenvolvimento de APIs com Flask".
-O [Desafio proposto](Desafio03.txt)
+Projeto criado como forma de fixar e avaliar os conhecimentos obtidos no módulo 3: "Comunicação em Tempo Real com Flask".
+O [Desafio proposto](Desafio03.txt).
 
 ### Funcionalidades
+
+Sample: Projeto de teste criado em aula simulando pagament com pix via api.
 
 
 ## Requisitos
@@ -31,13 +33,9 @@ sh scripts/build.sh
 # O script executa:
 # python.exe -m pip install --upgrade pip
 # pip install -U poetry
-# poetry self add poetry-plugin-export
 # poetry self update
 # poetry update
-# poetry run pre-commit run
-# # E para instalar as dependências na máquina local, além do ambiente virtual:
-# poetry export --without-hashes --format=requirements.txt -o requirements.txt
-# pip install -U -r requirements.txt
+# poetry run pre-commit install
 
 ```
 
@@ -47,3 +45,16 @@ PYTHONPATH=. poetry run pytest
 ```
 Observação: Os testes unitários dos projetos sql_alchemy_api e do desafio02
     estão utilizando um banco de dados na memória, não impactando a aplicação.
+
+## Executando sample - Payments
+PYTHONPATH=. poetry run python sample/payment/src/app.py
+
+PYTHONPATH=. FLASK_APP=sample.payment.src.app poetry run flask shell
+db.create_all()
+
+
+## Executando desafio3 - Chat
+PYTHONPATH=. poetry run python src/app.py
+
+PYTHONPATH=. FLASK_APP=src.app poetry run flask shell
+db.create_all()
