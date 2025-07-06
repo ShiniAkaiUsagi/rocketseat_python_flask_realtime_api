@@ -1,5 +1,5 @@
 [project]
-name = "rocketseat_python_flask_api"
+name = "rocketseat_python_flask_realtime_api"
 version = "1.0.0"
 description = ""
 authors = [{ name = "Pedro Dias" }]
