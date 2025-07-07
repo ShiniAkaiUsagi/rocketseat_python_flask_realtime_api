@@ -1,7 +1,7 @@
-# RocketSeat - Desafio 01 - Agenda
+# RocketSeat
 
 Projeto criado como forma de fixar e avaliar os conhecimentos obtidos no módulo 3: "Comunicação em Tempo Real com Flask".
-O [Desafio proposto](Desafio03.txt).
+[Desafio](Desafio.txt).
 
 ### Funcionalidades
 
